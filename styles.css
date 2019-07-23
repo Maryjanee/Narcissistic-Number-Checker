@@ -1,8 +1,10 @@
+/* Resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Base styles  */
 body {
   font-family: "Oxygen", sans-serif;
   background: linear-gradient(
@@ -18,12 +20,7 @@ body {
     #bee4f8 59%,
     #bee4f8 59%
   );
-}
-h1 {
-  font-weight: 300;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  color: #0a1429;
+  line-height: 1.1;
 }
 
 .container {
@@ -35,6 +32,16 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* Main Styles */
+
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #0a1429;
+}
+
 input {
   border-radius: 25px;
   margin-bottom: 1rem;
@@ -42,9 +49,10 @@ input {
   width: 300px;
   height: 50px;
 }
-input:focus {
-  outline: none;
+input[type="number"] {
+  font-size: 1.2rem;
 }
+
 input[type="button"] {
   cursor: pointer;
   font-size: 1rem;
@@ -52,10 +60,26 @@ input[type="button"] {
   color: #fff;
   font-weight: 300;
 }
+input:focus {
+  outline: none;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 1);
+}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
   outline: none;
+}
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#answer {
+  margin-top: 1rem;
+  font-size: 1.7rem;
 }

@@ -1,5 +1,3 @@
-// Select all elements to be used
-
 const input = document.querySelector("#input");
 const button = document.querySelector("#button");
 const value = input.value;
@@ -32,11 +30,11 @@ button.addEventListener("click", () => {
   if (isNarcissistNum) {
     display.textContent = `${value} is a Narcissistic Number`;
   } else {
-    display.textContent = `${value} is a not Narcissistic Number`;
+    display.textContent = `${value} is not Narcissistic Number`;
   }
 });
 
-// Clear input field after result has been displayed
+// Clear input field
 input.addEventListener("keyup", event => {
   const value = input.value;
   const display = document.querySelector("#answer");
