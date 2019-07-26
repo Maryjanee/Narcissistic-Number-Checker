@@ -30,7 +30,7 @@ button.addEventListener("click", () => {
   if (isNarcissistNum) {
     display.textContent = `${value} is a Narcissistic Number`;
   } else {
-    display.textContent = `${value} is not Narcissistic Number`;
+    display.textContent = `${value} is not a Narcissistic Number`;
   }
 });
 
